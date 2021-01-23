@@ -12,7 +12,7 @@
 .background {
   width: 100vw;
   height: 100vh;
-  background-image: url(background.png);
+  background-image: url(Background.png);
   position: absolute;
   top: 0;
   left: 0;
@@ -30,7 +30,7 @@
 .foreground {
   width: 100vw;
   height: 100vh;
-  background-image: url(foreground.png);
+  background-image: url(Foreground.png);
   position: absolute;
   top: 0;
   left: 0;
