@@ -1,0 +1,72 @@
+.container {
+  position: relative;
+    width: 90vw;
+    height: 80vh;
+    overflow: hidden;
+    margin: 0 auto;
+    top: 50vh;
+    transform: translate(0%, -50%);
+}
+
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(background.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: pulse-grow 40000ms;
+  animation-iteration-count: infinite;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation-timing-function: linear;
+  background-position: top;
+
+
+
+}
+
+.foreground {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(foreground.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+
+}
+
+
+@keyframes pulse-grow {
+  0% {
+
+    transform: scale(1) translateY(0px);
+  }
+
+  50% {
+      transform: scale(1.1) translateY(3%);
+  }
+
+  100% {
+      transform: scale(1) translateY(0px);
+  }
+}
+
+@keyframes move-down {
+  0% {
+
+    transform: translateY(0px);
+  }
+
+  50% {
+      transform: translateY(20px);
+  }
+
+  100% {
+      transform: translateY(0px);
+  }
+}
